@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82e5e329-ac78-2448-924c-a9e8a593e2b2++5922",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "82e5e329-ac78-2448-924c-a9e8a593e2b2++5922" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82e5e329-ac78-2448-924c-a9e8a593e2b2++5922" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D98195BA-D8E9-46A6-BCF2-81D286623D64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82e5e329-ac78-2448-924c-a9e8a593e2b2++5922" : "HealthBAT_Pro\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HealthBAT_Pro",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HealthBAT_Pro.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/10.1.4.131:8001\/svn\/BAT",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82e5e329-ac78-2448-924c-a9e8a593e2b2++5922"
+    }
+  ]
+}

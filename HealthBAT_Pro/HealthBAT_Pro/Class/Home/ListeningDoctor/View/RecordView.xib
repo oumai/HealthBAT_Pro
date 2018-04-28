@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Va2-MD-Ave" customClass="RecordView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最多录制60s,点击开始" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-vc-fta">
+                    <rect key="frame" x="97" y="90.5" width="180" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="Bdu-xo-P8t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0''" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1x-EO-cxe">
+                    <rect key="frame" x="87" y="49.5" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="rqv-1y-Do4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSe-EN-agA">
+                    <rect key="frame" x="155.5" y="130" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="o8K-fG-8KU"/>
+                        <constraint firstAttribute="height" constant="65" id="r6L-Lf-LNG"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="录制"/>
+                    <connections>
+                        <action selector="recordAction:" destination="Va2-MD-Ave" eventType="touchUpInside" id="fye-eN-YFY"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auD-cI-Out">
+                    <rect key="frame" x="84.5" y="147.5" width="31" height="30"/>
+                    <state key="normal" title="重录"/>
+                    <connections>
+                        <action selector="rerecordingAction:" destination="Va2-MD-Ave" eventType="touchUpInside" id="hua-Fa-zue"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-Qj-o8N">
+                    <rect key="frame" x="260.5" y="147.5" width="31" height="30"/>
+                    <state key="normal" title="提交"/>
+                    <connections>
+                        <action selector="commitAction:" destination="Va2-MD-Ave" eventType="touchUpInside" id="Wr4-Hz-pzA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Az-aG-k3o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KgZ-4L-Smq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d1C-Qj-o8N" firstAttribute="centerY" secondItem="VSe-EN-agA" secondAttribute="centerY" id="DeH-bS-0XY"/>
+                <constraint firstAttribute="trailing" secondItem="2Az-aG-k3o" secondAttribute="trailing" id="EYg-4h-LkB"/>
+                <constraint firstItem="VSe-EN-agA" firstAttribute="centerX" secondItem="Va2-MD-Ave" secondAttribute="centerX" id="ItL-Lf-0qs"/>
+                <constraint firstItem="BRb-vc-fta" firstAttribute="centerX" secondItem="Va2-MD-Ave" secondAttribute="centerX" id="J8X-Ke-GRH"/>
+                <constraint firstItem="BRb-vc-fta" firstAttribute="top" secondItem="w1x-EO-cxe" secondAttribute="bottom" constant="20" id="K8U-Xw-gcL"/>
+                <constraint firstItem="VSe-EN-agA" firstAttribute="centerY" secondItem="auD-cI-Out" secondAttribute="centerY" id="Z7H-TP-Ev3"/>
+                <constraint firstItem="2Az-aG-k3o" firstAttribute="leading" secondItem="Va2-MD-Ave" secondAttribute="leading" id="bP1-Qe-FaB"/>
+                <constraint firstItem="VSe-EN-agA" firstAttribute="leading" secondItem="auD-cI-Out" secondAttribute="trailing" constant="40" id="dhS-xs-jK0"/>
+                <constraint firstItem="BRb-vc-fta" firstAttribute="centerX" secondItem="Va2-MD-Ave" secondAttribute="centerX" id="hcv-Qh-kpZ"/>
+                <constraint firstItem="BRb-vc-fta" firstAttribute="centerX" secondItem="w1x-EO-cxe" secondAttribute="centerX" id="oHP-EI-aW7"/>
+                <constraint firstItem="2Az-aG-k3o" firstAttribute="top" secondItem="Va2-MD-Ave" secondAttribute="top" id="oo7-jD-npZ"/>
+                <constraint firstItem="d1C-Qj-o8N" firstAttribute="leading" secondItem="VSe-EN-agA" secondAttribute="trailing" constant="40" id="sSr-GN-Lyt"/>
+                <constraint firstItem="BRb-vc-fta" firstAttribute="centerY" secondItem="Va2-MD-Ave" secondAttribute="centerY" constant="-50" id="u8T-UZ-X1G"/>
+                <constraint firstItem="VSe-EN-agA" firstAttribute="top" secondItem="BRb-vc-fta" secondAttribute="bottom" constant="20" id="xNa-AD-eOc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commitBtn" destination="d1C-Qj-o8N" id="reb-xZ-piy"/>
+                <outlet property="countingLb" destination="w1x-EO-cxe" id="TEz-Yz-Fba"/>
+                <outlet property="lineView" destination="2Az-aG-k3o" id="4ki-fk-N0B"/>
+                <outlet property="recordBtn" destination="VSe-EN-agA" id="aPv-hp-d65"/>
+                <outlet property="recordType" destination="BRb-vc-fta" id="tZt-Jz-9L4"/>
+                <outlet property="rerecordingBtn" destination="auD-cI-Out" id="RKj-5r-LtD"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="-382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="录制" width="65" height="65"/>
+    </resources>
+</document>

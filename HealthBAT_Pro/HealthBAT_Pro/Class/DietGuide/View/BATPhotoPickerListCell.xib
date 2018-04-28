@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BATPhotoPickerListCell" id="w39-9q-Vfl" customClass="BATPhotoPickerListCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6xR-Dp-CKk" userLabel="图片">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="180"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DietGuide_Photo_check" translatesAutoresizingMaskIntoConstraints="NO" id="2P0-se-gWt" userLabel="对勾">
+                        <rect key="frame" x="61" y="75" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="9AO-JK-Khg"/>
+                            <constraint firstAttribute="height" constant="20" id="wX3-tj-icd"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-Mb-Q0D" userLabel="遮盖 View">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="180"/>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6xR-Dp-CKk" secondAttribute="trailing" id="5Cu-Wl-o4r"/>
+                <constraint firstItem="2P0-se-gWt" firstAttribute="centerY" secondItem="w39-9q-Vfl" secondAttribute="centerY" constant="-5" id="CSI-m0-xhZ"/>
+                <constraint firstItem="k1y-Mb-Q0D" firstAttribute="leading" secondItem="w39-9q-Vfl" secondAttribute="leading" id="KRM-5O-1rd"/>
+                <constraint firstAttribute="bottom" secondItem="k1y-Mb-Q0D" secondAttribute="bottom" id="SSz-F0-N6c"/>
+                <constraint firstItem="2P0-se-gWt" firstAttribute="centerX" secondItem="w39-9q-Vfl" secondAttribute="centerX" constant="-5" id="XNt-Rw-JDF"/>
+                <constraint firstItem="6xR-Dp-CKk" firstAttribute="leading" secondItem="w39-9q-Vfl" secondAttribute="leading" id="cVt-Yd-YB3"/>
+                <constraint firstAttribute="bottom" secondItem="6xR-Dp-CKk" secondAttribute="bottom" id="fTy-CS-Q2L"/>
+                <constraint firstAttribute="trailing" secondItem="k1y-Mb-Q0D" secondAttribute="trailing" id="rFy-Rp-y6x"/>
+                <constraint firstItem="6xR-Dp-CKk" firstAttribute="top" secondItem="w39-9q-Vfl" secondAttribute="top" id="rh6-3J-nrz"/>
+                <constraint firstItem="k1y-Mb-Q0D" firstAttribute="top" secondItem="w39-9q-Vfl" secondAttribute="top" id="swm-9E-es4"/>
+            </constraints>
+            <size key="customSize" width="152" height="180"/>
+            <connections>
+                <outlet property="coverView" destination="k1y-Mb-Q0D" id="fZy-dY-JrQ"/>
+                <outlet property="imageView" destination="6xR-Dp-CKk" id="CIz-O9-VVq"/>
+                <outlet property="selectImageView" destination="2P0-se-gWt" id="Soh-0b-tZI"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="-132"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DietGuide_Photo_check" width="20" height="20"/>
+    </resources>
+</document>

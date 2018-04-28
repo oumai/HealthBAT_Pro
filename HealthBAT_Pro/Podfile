@@ -1,0 +1,57 @@
+platform:ios,'8.0'
+
+inhibit_all_warnings!
+
+use_frameworks!
+
+#source 'https://git.coding.net/hging/Specs.git'
+
+pre_install do
+    system("sed -i '' '/UITextField/d' Pods/BlocksKit/BlocksKit/BlocksKit+UIKit.h")
+    system('rm Pods/BlocksKit/BlocksKit/UIKit/UITextField+BlocksKit.h')
+    system('rm Pods/BlocksKit/BlocksKit/UIKit/UITextField+BlocksKit.m')
+end
+
+target 'HealthBAT_Pro' do
+
+    pod 'Reachability', '3.2'
+    pod 'SVProgressHUD', '2.0.3'
+    pod 'AFNetworking', '3.1.0'
+    pod 'SDWebImage', '3.7.6'
+    pod 'Masonry', '1.1.0'
+    pod 'IQKeyboardManager', '4.0.6'
+    pod 'FMDB', '2.6.2'
+    pod 'MJRefresh', '3.1.12'
+    pod 'Base64', '1.1.2'
+    pod 'SFHFKeychainUtils', '0.0.1'
+    pod 'SDCycleScrollView', '1.65'
+    pod 'DZNEmptyDataSet', '1.8.1'
+    pod 'MJExtension', '3.0.13'
+    pod 'BlocksKit', '2.2.5'
+    pod 'CocoaLumberjack', '2.2.0'
+    pod 'FDFullscreenPopGesture', '1.1'
+    pod 'YYText', '1.0.7'
+    pod 'YYImage/WebP', '1.0.4'
+    pod 'YCXMenu', '0.0.11'
+    pod 'AspectsV1.4.2', '1.4.2'
+    pod 'TZImagePickerController', '1.9.4'
+    pod 'WZLBadge', '1.2.5'
+    pod 'MZTimerLabel', '0.5.4'
+    pod 'RongCloudIM/IMLib', '2.8.18'
+    pod 'RongCloudIM/IMKit', '2.8.18'
+#    pod 'RongCloudIM/CallLib', '2.8.0'
+#    pod 'RongCloudIM/CallKit', '2.8.0'
+
+    pod 'JPush', '3.0.6'
+
+    #微信
+    pod 'WechatOpenSDK', '1.8.0'
+   
+    pod 'BaiduMapKit', '3.1.0'
+    
+#    pod 'HyphenateSDK', :git => 'https://github.com/easemob/hyphenate-cocoapods.git'
+
+    
+end
+
+

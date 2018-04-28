@@ -1,0 +1,252 @@
+﻿/** 聊天信息界面  **/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+    overflow-x: hidden;
+}
+.container{
+    overflow:auto!important;
+}
+p{
+	color: #333;
+}
+.mui-content{
+	background: #f6f6f6;
+}
+.chat-interface .chat-con {
+    background: #f6f6f6;
+}
+ 
+.chat-interface .mui-table-view {
+    background-color: #f6f6f6;
+    height: 100%;
+    /*opacity: 0;*/
+}
+
+.chat-interface .mui-table-view:before {
+    background-color: transparent;
+}
+
+.mui-table-view:after {
+    background-color: transparent;
+}
+.chat-interface .chat-con .con-time{
+	text-align: center;
+	color: #666;
+	font-size: 13px;
+}
+.chat-interface .chat-con .msg-con {
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+    max-width: 75%;
+    font-size: 15px;
+    margin: 10px 15px;
+}
+
+.chat-interface .other-msg .msg-con {
+    float: left;
+}
+
+.chat-interface .oneself-msg .msg-con {
+    float: right;
+    box-direction: reverse;
+    -moz-box-direction: reverse;
+    -webkit-box-direction: reverse;
+}
+
+.chat-interface .msg-con .msg-box {
+    box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    border-radius: 5px;
+    position: relative;
+    word-break: break-all;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+}
+
+.chat-interface .msg-con .msg-box img {
+    max-width: 100%;
+}
+
+.chat-interface .msg-con .msg-box .msg-info {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 12px;
+    -webkit-transform: rotate(45deg);
+}
+
+.chat-interface .other-msg .msg-box .msg-info {
+    background: #fff;
+    left: -4px
+}
+
+.chat-interface .oneself-msg .msg-box .msg-info {
+    background: #63c9bf;
+    right: -5px;
+}
+
+.chat-interface .other-msg .msg-box {
+    background: #fff;
+}
+
+.chat-interface .oneself-msg .msg-box .msg-txt {
+    color: #fff;
+}
+
+.chat-interface .other-msg .msg-box .msg-txt {
+    color: #333;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.chat-interface .oneself-msg .msg-box {
+    background: #63c9bf;
+    border: solid 1px #f2f2f2;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+}
+
+.chat-interface .plan-landscap .msg-box {
+    background: #f6f6f6;
+    border: solid 1px #f2f2f2;
+    padding: 0;
+}
+
+.chat-interface .plan-landscap .landscap-con .read-detail:hover {
+    color: #999;
+}
+
+.chat-interface .plan-landscap .msg-box .msg-info {
+    background: #ff9600;
+}
+.info-con,.hospital-con{
+	width: 75%;
+}
+.info-con .info-box .info-txt{
+	display: block;
+	height: 30px;
+	line-height: 20px;
+	border-bottom:solid 1px #e5e5e5;
+	margin-bottom: 7px;
+}
+.info-con .info-box .info-list li{
+	line-height: 22px;
+}
+.detail-box .msg-txt{
+	max-height: 68px;
+	overflow: hidden;
+}
+.detail-box .more-detail{
+	float: right;
+	position: relative;
+}
+.detail-box .more-detail:after{
+	content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-right: solid 1px #0182eb;
+    border-bottom: solid 1px #0182eb;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.hospital-box .hsp-detail i{
+	float: left;
+	width: 15px;
+	height: 20px;
+	background: url(../../img/KDoctor/hospital.png) no-repeat;
+	background-size: 44px;
+	background-position: 0 -1px;
+	margin-right: 5px;
+}
+.hospital-box .hsp-detail{
+	margin-top: 3px;
+}
+.hospital-box .hsp-detail .nature-box i{
+	margin-left: 12px;
+	width: 21px;
+	background-position: -21px -1px;
+}
+.hospital-box .font-blue{
+	text-decoration: underline;
+}
+.hospital-box .appointment{
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	margin-top:3px;
+}
+.mui-icon-pulldown:before {
+    content: '';
+}
+
+/*查看详情*/
+.detail-more{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1000;
+}
+.detail-more .mask{
+	width: 100%;
+	height: 23%;
+	background: rgba(0,0,0,0.5);
+}
+.detail-more .detail{
+	height: 70%;
+	background: #fff;
+	padding: 0 10px;
+	color: rgb(51,51,51);
+	font-size: 16px;
+	line-height: 24px;
+	overflow: hidden;
+}
+.detail-more .detail .close-detail{
+	display: block;
+    width: 12px;
+    height: 12px;
+    top: 15px;
+    left: 15px;
+    border-right: solid 3px #999;
+    border-bottom: solid 3px #999;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 10px auto 13px;
+}
+
+.detail-more .detail .detail-content{
+	height: 91%;
+	overflow: hidden;
+}
+
+/*模拟发送,接受消息*/
+
+.buttomBox{
+    position: absolute;
+    top:0;
+}
+.buttom{
+    width: 66px;
+    border: 1px solid #000;
+    padding: 10px;
+    float:left;
+    margin-right:14px;
+}
+
+.msg-box{
+	padding: 10px 20px!important;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="BATHealthyDrugTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XV4-wq-Uhl">
+                        <rect key="frame" x="16" y="11" width="59" height="59"/>
+                        <color key="backgroundColor" red="0.42769134906042772" green="0.58240661445103115" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XV4-wq-Uhl" secondAttribute="height" multiplier="1:1" id="tCl-VH-rN9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="康美药业三七" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1B-F1-0Q5">
+                        <rect key="frame" x="80" y="11" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FiW-kL-azD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-f6-bMV">
+                        <rect key="frame" x="249.5" y="10" width="60.5" height="60.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1bJ-f6-bMV" secondAttribute="height" multiplier="1:1" id="z7l-fx-Kci"/>
+                        </constraints>
+                        <state key="normal" image="shopping_h"/>
+                        <connections>
+                            <action selector="addToBuyCar:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6Vw-rg-eze"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLw-aZ-yJH">
+                        <rect key="frame" x="80" y="54" width="30" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.97254901960784312" green="0.29019607843137252" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1bJ-f6-bMV" secondAttribute="trailing" constant="10" id="0jC-KX-96u"/>
+                    <constraint firstItem="h1B-F1-0Q5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="JPp-hW-aP5"/>
+                    <constraint firstItem="hLw-aZ-yJH" firstAttribute="leading" secondItem="h1B-F1-0Q5" secondAttribute="leading" id="LQz-f9-7jo"/>
+                    <constraint firstItem="XV4-wq-Uhl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Owf-bg-lkd"/>
+                    <constraint firstAttribute="bottom" secondItem="1bJ-f6-bMV" secondAttribute="bottom" constant="10" id="Ryl-If-IxP"/>
+                    <constraint firstItem="hLw-aZ-yJH" firstAttribute="bottom" secondItem="XV4-wq-Uhl" secondAttribute="bottom" id="aiN-9U-2Nx"/>
+                    <constraint firstItem="h1B-F1-0Q5" firstAttribute="leading" secondItem="XV4-wq-Uhl" secondAttribute="trailing" constant="5" id="gC9-wL-dih"/>
+                    <constraint firstItem="XV4-wq-Uhl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hpb-Ym-p7b"/>
+                    <constraint firstItem="1bJ-f6-bMV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ljD-Xk-r0I"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XV4-wq-Uhl" secondAttribute="bottom" id="pOr-ye-eV4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="PriceLab" destination="hLw-aZ-yJH" id="KeE-Cx-Og6"/>
+                <outlet property="imageV" destination="XV4-wq-Uhl" id="9JS-Dl-JEz"/>
+                <outlet property="titleLab" destination="h1B-F1-0Q5" id="KCE-3A-S3V"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="71"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shopping_h" width="25" height="21"/>
+    </resources>
+</document>

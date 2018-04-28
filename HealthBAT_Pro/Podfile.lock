@@ -1,0 +1,138 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AspectsV1.4.2 (1.4.2)
+  - BaiduMapKit (3.1.0)
+  - Base64 (1.1.2)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - DZNEmptyDataSet (1.8.1)
+  - FDFullscreenPopGesture (1.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (4.0.6)
+  - JCore (1.1.5)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MZTimerLabel (0.5.4)
+  - Reachability (3.2)
+  - RongCloudIM/IMKit (2.8.18):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.18)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SFHFKeychainUtils (0.0.1)
+  - SVProgressHUD (2.0.3)
+  - TZImagePickerController (1.9.4)
+  - WechatOpenSDK (1.8.0)
+  - WZLBadge (1.2.5)
+  - YCXMenu (0.0.11)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.1.0)
+  - AspectsV1.4.2 (= 1.4.2)
+  - BaiduMapKit (= 3.1.0)
+  - Base64 (= 1.1.2)
+  - BlocksKit (= 2.2.5)
+  - CocoaLumberjack (= 2.2.0)
+  - DZNEmptyDataSet (= 1.8.1)
+  - FDFullscreenPopGesture (= 1.1)
+  - FMDB (= 2.6.2)
+  - IQKeyboardManager (= 4.0.6)
+  - JPush (= 3.0.6)
+  - Masonry (= 1.1.0)
+  - MJExtension (= 3.0.13)
+  - MJRefresh (= 3.1.12)
+  - MZTimerLabel (= 0.5.4)
+  - Reachability (= 3.2)
+  - RongCloudIM/IMKit (= 2.8.18)
+  - RongCloudIM/IMLib (= 2.8.18)
+  - SDCycleScrollView (= 1.65)
+  - SDWebImage (= 3.7.6)
+  - SFHFKeychainUtils (= 0.0.1)
+  - SVProgressHUD (= 2.0.3)
+  - TZImagePickerController (= 1.9.4)
+  - WechatOpenSDK (= 1.8.0)
+  - WZLBadge (= 1.2.5)
+  - YCXMenu (= 0.0.11)
+  - YYImage/WebP (= 1.0.4)
+  - YYText (= 1.0.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AspectsV1.4.2: a8b168606776215f5ba4790b95ff315df336aca9
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RongCloudIM: 9a934460ec2115d2240c565acc15390b43fb715d
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TZImagePickerController: 3f5383c7eae8ab9971a94690c2af6a3a72520319
+  WechatOpenSDK: 0ee07a8d492299d3e47372a33da5af26524a7576
+  WZLBadge: 16c08aa0a645e2591690f21cbcb410a3d878c7ac
+  YCXMenu: 6003bcd20d8ac72e3eb3c442c97ed21948c6dc1f
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 14ffb4e7c43e829c681f5824e724bca2f817c7b3
+
+COCOAPODS: 1.3.1

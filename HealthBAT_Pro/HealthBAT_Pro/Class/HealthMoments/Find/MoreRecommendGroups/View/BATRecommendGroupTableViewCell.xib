@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BATRecommendGroupTableViewCell" id="KGk-i7-Jjw" customClass="BATRecommendGroupTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zeq-sE-aGc">
+                        <rect key="frame" x="15" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="I24-mu-zQU"/>
+                            <constraint firstAttribute="height" constant="70" id="RZN-9b-obn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o0-qZ-OOR">
+                        <rect key="frame" x="93" y="15" width="37.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="86F-Um-SyM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-Rl-CU8">
+                        <rect key="frame" x="93" y="39" width="33" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="aAM-sA-CmA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZM-oA-8zE">
+                        <rect key="frame" x="93" y="64" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZc-oQ-bmG">
+                        <rect key="frame" x="280" y="37" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="3z9-wb-jrE"/>
+                            <constraint firstAttribute="height" constant="25" id="Unh-NV-x6U"/>
+                        </constraints>
+                        <state key="normal" image="icon_join_group"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OZM-oA-8zE" firstAttribute="leading" secondItem="Zeq-sE-aGc" secondAttribute="trailing" constant="8" id="0KH-KI-CA7"/>
+                    <constraint firstItem="bjV-Rl-CU8" firstAttribute="top" secondItem="1o0-qZ-OOR" secondAttribute="bottom" constant="3" id="16X-7S-nCm"/>
+                    <constraint firstItem="1o0-qZ-OOR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="7C1-jp-PKR"/>
+                    <constraint firstItem="1o0-qZ-OOR" firstAttribute="leading" secondItem="Zeq-sE-aGc" secondAttribute="trailing" constant="8" id="Dhe-kc-Idg"/>
+                    <constraint firstItem="fZc-oQ-bmG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MEW-4d-W8y"/>
+                    <constraint firstItem="fZc-oQ-bmG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bjV-Rl-CU8" secondAttribute="trailing" constant="10" id="Nmv-gh-7Cr"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OZM-oA-8zE" secondAttribute="trailing" constant="50" id="UGq-qP-Qyj"/>
+                    <constraint firstItem="OZM-oA-8zE" firstAttribute="top" secondItem="bjV-Rl-CU8" secondAttribute="bottom" constant="4" id="Vb6-Ou-6wG"/>
+                    <constraint firstAttribute="trailing" secondItem="fZc-oQ-bmG" secondAttribute="trailing" constant="15" id="WiB-Bz-RE7"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1o0-qZ-OOR" secondAttribute="trailing" constant="50" id="XCt-cI-gUh"/>
+                    <constraint firstItem="bjV-Rl-CU8" firstAttribute="leading" secondItem="Zeq-sE-aGc" secondAttribute="trailing" constant="8" id="drn-WC-CwE"/>
+                    <constraint firstItem="Zeq-sE-aGc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rDg-BC-ZGr"/>
+                    <constraint firstItem="Zeq-sE-aGc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t28-i9-RJB"/>
+                    <constraint firstAttribute="bottom" secondItem="OZM-oA-8zE" secondAttribute="bottom" constant="10" id="uXo-n2-lTA"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="uXo-n2-lTA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="groupDescLabel" destination="OZM-oA-8zE" id="ZWW-ZP-xgb"/>
+                <outlet property="groupIconImageView" destination="Zeq-sE-aGc" id="NAX-jw-D5W"/>
+                <outlet property="groupMemberCountLabel" destination="bjV-Rl-CU8" id="HUr-pC-Ozq"/>
+                <outlet property="groupNameLabel" destination="1o0-qZ-OOR" id="u2a-4w-NGe"/>
+                <outlet property="joinGroupButton" destination="fZc-oQ-bmG" id="fFG-EC-LjP"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="363"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_join_group" width="25" height="25"/>
+    </resources>
+</document>

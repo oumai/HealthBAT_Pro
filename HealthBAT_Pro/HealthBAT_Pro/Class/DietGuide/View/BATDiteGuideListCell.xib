@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BATDiteGuideListCell" id="PcZ-DC-4mU" userLabel="BATDiteGuideListCell" customClass="BATDiteGuideListCell">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="165" height="286"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-Cm-UsV">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="165" id="g2a-5C-5Ex"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNS-la-zcY" userLabel="userIcon">
+                        <rect key="frame" x="9" y="170" width="23.5" height="23.5"/>
+                        <color key="backgroundColor" red="0.30012703880000002" green="1" blue="0.35119319259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23.5" id="FVv-lX-96d"/>
+                            <constraint firstAttribute="height" constant="23.5" id="dku-Ia-h8G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-eE-Io7" userLabel="nameLabel">
+                        <rect key="frame" x="36.5" y="172" width="118.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wa-s4-KFU" userLabel="contentLabel">
+                        <rect key="frame" x="9" y="207" width="146" height="46.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtI-CK-Hyq" userLabel="likeButton">
+                        <rect key="frame" x="0.0" y="258.5" width="165" height="19"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="EI4-f2-Tj4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" red="0.30012703880000002" green="1" blue="0.35119319259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="999" image="dietGuide_fabulous">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="dietGuide_Fabulous_choose"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHa-oL-by6" userLabel="分割线 View">
+                        <rect key="frame" x="6" y="199" width="154" height="0.5"/>
+                        <color key="backgroundColor" red="1" green="0.092161187759999999" blue="0.2564670724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Jsf-B8-qCC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YRZ-eE-Io7" secondAttribute="trailing" constant="10" id="2y5-ln-osH"/>
+                <constraint firstItem="hNS-la-zcY" firstAttribute="top" secondItem="hQa-Cm-UsV" secondAttribute="bottom" constant="5" id="7Bl-PB-Ddk"/>
+                <constraint firstItem="wHa-oL-by6" firstAttribute="top" secondItem="hNS-la-zcY" secondAttribute="bottom" constant="5.5" id="AYZ-3y-gdl"/>
+                <constraint firstItem="8Wa-s4-KFU" firstAttribute="leading" secondItem="PcZ-DC-4mU" secondAttribute="leading" constant="9" id="IaK-DR-vZp"/>
+                <constraint firstItem="wHa-oL-by6" firstAttribute="leading" secondItem="PcZ-DC-4mU" secondAttribute="leading" constant="6" id="Kck-vj-fPk"/>
+                <constraint firstItem="hQa-Cm-UsV" firstAttribute="leading" secondItem="PcZ-DC-4mU" secondAttribute="leading" id="L1r-Ho-0fZ"/>
+                <constraint firstItem="XtI-CK-Hyq" firstAttribute="leading" secondItem="PcZ-DC-4mU" secondAttribute="leading" id="OSL-ZL-TRa"/>
+                <constraint firstAttribute="bottom" secondItem="XtI-CK-Hyq" secondAttribute="bottom" constant="8.5" id="P7T-ak-Dzf"/>
+                <constraint firstItem="hNS-la-zcY" firstAttribute="leading" secondItem="PcZ-DC-4mU" secondAttribute="leading" constant="9" id="SPs-g5-Qg8"/>
+                <constraint firstItem="hQa-Cm-UsV" firstAttribute="top" secondItem="PcZ-DC-4mU" secondAttribute="top" id="VVz-LF-cPy"/>
+                <constraint firstItem="8Wa-s4-KFU" firstAttribute="top" secondItem="wHa-oL-by6" secondAttribute="bottom" constant="7.5" id="XuV-2R-5cq"/>
+                <constraint firstAttribute="trailing" secondItem="hQa-Cm-UsV" secondAttribute="trailing" id="Xxe-wj-rMR"/>
+                <constraint firstAttribute="trailing" secondItem="XtI-CK-Hyq" secondAttribute="trailing" id="che-ja-5Cd"/>
+                <constraint firstItem="YRZ-eE-Io7" firstAttribute="leading" secondItem="hNS-la-zcY" secondAttribute="trailing" constant="4" id="eiW-KL-ezG"/>
+                <constraint firstItem="XtI-CK-Hyq" firstAttribute="top" secondItem="8Wa-s4-KFU" secondAttribute="bottom" constant="5" id="g0F-SW-s9y"/>
+                <constraint firstItem="YRZ-eE-Io7" firstAttribute="centerY" secondItem="hNS-la-zcY" secondAttribute="centerY" id="mBI-fc-Fth"/>
+                <constraint firstAttribute="trailing" secondItem="wHa-oL-by6" secondAttribute="trailing" constant="5" id="nAe-0o-W1G"/>
+                <constraint firstAttribute="trailing" secondItem="8Wa-s4-KFU" secondAttribute="trailing" constant="10" id="xjv-LH-qmN"/>
+            </constraints>
+            <size key="customSize" width="165" height="286"/>
+            <connections>
+                <outlet property="descLabel" destination="8Wa-s4-KFU" id="nGs-6q-poF"/>
+                <outlet property="iconImageView" destination="hNS-la-zcY" id="43Q-10-z6A"/>
+                <outlet property="likeButton" destination="XtI-CK-Hyq" id="z1E-tf-HqF"/>
+                <outlet property="nameLabel" destination="YRZ-eE-Io7" id="RkD-Wh-1o7"/>
+                <outlet property="separateView" destination="wHa-oL-by6" id="c7W-ao-sS1"/>
+                <outlet property="topImageView" destination="hQa-Cm-UsV" id="2PV-zM-Efw"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="51"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dietGuide_Fabulous_choose" width="19" height="19"/>
+        <image name="dietGuide_fabulous" width="19" height="19"/>
+    </resources>
+</document>

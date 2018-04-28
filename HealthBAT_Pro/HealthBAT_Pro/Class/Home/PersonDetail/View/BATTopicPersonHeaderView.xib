@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7V5-ib-0Th" customClass="BATTopicPersonHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-Person-bj" translatesAutoresizingMaskIntoConstraints="NO" id="GmJ-aU-70t">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalCenter_defaultAvator" translatesAutoresizingMaskIntoConstraints="NO" id="wNm-qd-Yrn">
+                    <rect key="frame" x="10" y="86" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="09j-el-X9Y"/>
+                        <constraint firstAttribute="width" constant="50" id="1ap-h4-yWh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFm-Za-khZ">
+                    <rect key="frame" x="70" y="111" width="155" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GmJ-aU-70t" firstAttribute="leading" secondItem="7V5-ib-0Th" secondAttribute="leading" id="Fl9-iP-kkO"/>
+                <constraint firstAttribute="bottom" secondItem="GmJ-aU-70t" secondAttribute="bottom" id="HSm-Na-w5e"/>
+                <constraint firstAttribute="bottom" secondItem="wNm-qd-Yrn" secondAttribute="bottom" constant="10" id="LaM-cR-qmO"/>
+                <constraint firstAttribute="trailing" secondItem="GmJ-aU-70t" secondAttribute="trailing" id="P9b-FI-Q7R"/>
+                <constraint firstAttribute="trailing" secondItem="LFm-Za-khZ" secondAttribute="trailing" constant="150" id="XB9-y7-Vlx"/>
+                <constraint firstItem="LFm-Za-khZ" firstAttribute="centerY" secondItem="wNm-qd-Yrn" secondAttribute="centerY" id="Z22-bq-OC4"/>
+                <constraint firstItem="wNm-qd-Yrn" firstAttribute="leading" secondItem="7V5-ib-0Th" secondAttribute="leading" constant="10" id="rzt-Wf-huy"/>
+                <constraint firstItem="LFm-Za-khZ" firstAttribute="leading" secondItem="wNm-qd-Yrn" secondAttribute="trailing" constant="10" id="xXN-bq-AVf"/>
+                <constraint firstItem="GmJ-aU-70t" firstAttribute="top" secondItem="7V5-ib-0Th" secondAttribute="top" id="yUc-fT-rfe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headImage" destination="wNm-qd-Yrn" id="rGb-hv-JyH"/>
+                <outlet property="nameLb" destination="LFm-Za-khZ" id="7hd-Ea-Eqk"/>
+            </connections>
+            <point key="canvasLocation" x="-630" y="-148"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-Person-bj" width="376" height="145"/>
+        <image name="personalCenter_defaultAvator" width="60" height="60"/>
+    </resources>
+</document>

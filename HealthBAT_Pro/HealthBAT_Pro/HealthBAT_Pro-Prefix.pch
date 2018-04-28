@@ -1,0 +1,48 @@
+//
+//  HealthBAT_Pro-Prefix.pch
+//  HealthBAT_Pro
+//
+//  Created by Skyrim on 16/7/7.
+//  Copyright © 2016年 KMHealthCloud. All rights reserved.
+//
+
+#ifndef HealthBAT_Pro_Prefix_pch
+#define HealthBAT_Pro_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+//第三方
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "SJAvatarBrowser.h"
+#import "UIView+Extension.h"
+
+#import "Singleton.h"//单例宏
+#import "UtilsHeader.h"//通用工具
+
+#import "BATExpandHeader.h"//BAT扩展
+#import "BATLoginViewController.h"//登录界面
+#import "BATAppDelegate+BATShareCategory.h"//分享
+//#import "BATAppDelegate+BATTalkingDataCategory.h" //TalkingData监测
+#import "BATAppDelegate+BATJPushCategory.h" //极光推送
+#import "UIScrollView+EmptyDataSet.h"   //全局无内容提示
+#import "BATDefaultView.h"  //全局无内容提示
+
+#import "BATAppDelegate+BATTingYunCategory.h" //听云
+#import "BATTingYingConstanstHeader.h"  //听云ID常量
+
+#import "BATUserPortrayTools.h"
+
+#import "NSDictionary+JKSafeAccess.h"
+#import "NSArray+SafeAccess.h"
+#import "NSString+Common.h"
+#import "BATHomeThemeManager.h"
+#endif
+
+#endif /* HealthBAT_Pro_Prefix_pch */

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BATCustomNormalTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BATCustomNormalTableViewCell" id="KGk-i7-Jjw" customClass="BATCustomNormalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-eE-M02">
+                        <rect key="frame" x="8" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-ff-W0c">
+                        <rect key="frame" x="263" y="6" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="6hi-ff-W0c" secondAttribute="trailing" id="Lcn-9C-NWY"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="aPe-eE-M02" secondAttribute="leading" id="W4D-yM-X8K"/>
+                    <constraint firstItem="aPe-eE-M02" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lf5-VG-qdH"/>
+                    <constraint firstItem="6hi-ff-W0c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tnP-vE-sOc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="isDefaultSwitch" destination="6hi-ff-W0c" id="x49-lC-t5y"/>
+                <outlet property="nameLabel" destination="aPe-eE-M02" id="QoN-1X-L8s"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="399"/>
+        </tableViewCell>
+    </objects>
+</document>

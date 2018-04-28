@@ -1,0 +1,20 @@
+//
+//  BATGroupMemberModel.m
+//  HealthBAT_Pro
+//
+//  Created by cjl on 16/8/31.
+//  Copyright © 2016年 KMHealthCloud. All rights reserved.
+//
+
+#import "BATGroupMemberModel.h"
+
+@implementation BATGroupMemberModel
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"Data" : [BATGroupMemberData class]};
+}
+@end
+
+@implementation BATGroupMemberData
+
+@end

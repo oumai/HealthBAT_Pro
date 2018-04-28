@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BATPhotoPickerListTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lki-7R-Y1P">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DietGuide_SeeBigPic_Nav" translatesAutoresizingMaskIntoConstraints="NO" id="6yr-xN-6P2" userLabel="zoomImageView">
+                    <rect key="frame" x="334.5" y="144" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ede-Fp-Azq"/>
+                        <constraint firstAttribute="height" constant="25" id="ra8-dN-3i7"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6yr-xN-6P2" secondAttribute="trailing" constant="15.5" id="3NM-jr-weQ"/>
+                <constraint firstAttribute="bottom" secondItem="6yr-xN-6P2" secondAttribute="bottom" constant="16" id="I0L-WK-UnW"/>
+                <constraint firstAttribute="bottom" secondItem="lki-7R-Y1P" secondAttribute="bottom" id="Pza-JN-PCP"/>
+                <constraint firstItem="lki-7R-Y1P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Taw-Dk-rA5"/>
+                <constraint firstItem="lki-7R-Y1P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZQ0-xb-uL6"/>
+                <constraint firstAttribute="trailing" secondItem="lki-7R-Y1P" secondAttribute="trailing" id="ZvG-KS-HiK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="lki-7R-Y1P" id="XtN-nT-TbP"/>
+                <outlet property="zoomImageView" destination="6yr-xN-6P2" id="4YM-U0-Atl"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="294.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DietGuide_SeeBigPic_Nav" width="25" height="25"/>
+    </resources>
+</document>

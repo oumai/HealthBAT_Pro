@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Xeg-dM-EhE" customClass="BATGroupDynamicOperationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIo-t7-I2k">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="allButtonAction:" destination="Xeg-dM-EhE" eventType="touchUpInside" id="51h-Uh-QMp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5k-Wj-flr">
+                    <rect key="frame" x="213" y="0.0" width="107" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="问题">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="questionButton:" destination="Xeg-dM-EhE" eventType="touchUpInside" id="znm-qp-bPu"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-84-Jma">
+                    <rect key="frame" x="107" y="5" width="1" height="34"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="hhi-qL-J35"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aI-Gb-VlF">
+                    <rect key="frame" x="107" y="0.0" width="107" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="动态">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dynamicButton:" destination="Xeg-dM-EhE" eventType="touchUpInside" id="liu-1d-JCY"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfq-1O-59j">
+                    <rect key="frame" x="214" y="5" width="1" height="34"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="C3V-gi-f2L"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ng-we-j53">
+                    <rect key="frame" x="0.0" y="41" width="107" height="3"/>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.54117647058823526" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="xzh-cd-L9w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Ng-we-j53" firstAttribute="leading" secondItem="Xeg-dM-EhE" secondAttribute="leading" id="47U-wU-ZKT"/>
+                <constraint firstAttribute="bottom" secondItem="V5k-Wj-flr" secondAttribute="bottom" id="IRu-IX-olt"/>
+                <constraint firstAttribute="bottom" secondItem="uIo-t7-I2k" secondAttribute="bottom" id="LIf-vm-LbR"/>
+                <constraint firstItem="rfq-1O-59j" firstAttribute="leading" secondItem="3aI-Gb-VlF" secondAttribute="trailing" id="Pm4-He-5n2"/>
+                <constraint firstItem="6Ng-we-j53" firstAttribute="width" secondItem="uIo-t7-I2k" secondAttribute="width" id="QnY-09-zJr"/>
+                <constraint firstItem="rfq-1O-59j" firstAttribute="top" secondItem="Xeg-dM-EhE" secondAttribute="top" constant="5" id="QpG-QQ-UtT"/>
+                <constraint firstAttribute="bottom" secondItem="wpi-84-Jma" secondAttribute="bottom" constant="5" id="S5f-8Q-7TA"/>
+                <constraint firstItem="V5k-Wj-flr" firstAttribute="leading" secondItem="3aI-Gb-VlF" secondAttribute="trailing" constant="-1" id="Tjw-qr-AhP"/>
+                <constraint firstItem="3aI-Gb-VlF" firstAttribute="width" secondItem="uIo-t7-I2k" secondAttribute="width" id="XEc-Qa-8WC"/>
+                <constraint firstAttribute="trailing" secondItem="V5k-Wj-flr" secondAttribute="trailing" id="Yv9-tw-VaA"/>
+                <constraint firstItem="uIo-t7-I2k" firstAttribute="top" secondItem="Xeg-dM-EhE" secondAttribute="top" id="b1i-TG-1jk"/>
+                <constraint firstAttribute="bottom" secondItem="rfq-1O-59j" secondAttribute="bottom" constant="5" id="bCG-sa-NTT"/>
+                <constraint firstItem="3aI-Gb-VlF" firstAttribute="top" secondItem="Xeg-dM-EhE" secondAttribute="top" id="dr8-eh-ZeK"/>
+                <constraint firstItem="uIo-t7-I2k" firstAttribute="leading" secondItem="Xeg-dM-EhE" secondAttribute="leading" id="e0m-qi-epy"/>
+                <constraint firstItem="wpi-84-Jma" firstAttribute="leading" secondItem="uIo-t7-I2k" secondAttribute="trailing" id="iVI-nb-DyS"/>
+                <constraint firstAttribute="bottom" secondItem="6Ng-we-j53" secondAttribute="bottom" id="jkC-se-iMO"/>
+                <constraint firstItem="V5k-Wj-flr" firstAttribute="top" secondItem="Xeg-dM-EhE" secondAttribute="top" id="ltJ-kN-Nhw"/>
+                <constraint firstItem="V5k-Wj-flr" firstAttribute="width" secondItem="uIo-t7-I2k" secondAttribute="width" id="pNg-Ae-rLV"/>
+                <constraint firstAttribute="bottom" secondItem="3aI-Gb-VlF" secondAttribute="bottom" id="uZw-aG-LvU"/>
+                <constraint firstItem="wpi-84-Jma" firstAttribute="top" secondItem="Xeg-dM-EhE" secondAttribute="top" constant="5" id="vpw-dQ-Sf2"/>
+                <constraint firstItem="3aI-Gb-VlF" firstAttribute="leading" secondItem="uIo-t7-I2k" secondAttribute="trailing" id="xbg-GT-fBo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allButton" destination="uIo-t7-I2k" id="WAZ-XE-IWW"/>
+                <outlet property="dynamicButton" destination="3aI-Gb-VlF" id="9BD-f2-JDo"/>
+                <outlet property="questionButton" destination="V5k-Wj-flr" id="ECa-fI-cbK"/>
+                <outlet property="sliderLine" destination="6Ng-we-j53" id="Yjw-Mi-QN5"/>
+                <outlet property="sliderLineLeading" destination="47U-wU-ZKT" id="SKC-Nt-wVS"/>
+            </connections>
+            <point key="canvasLocation" x="-559" y="791"/>
+        </view>
+    </objects>
+</document>

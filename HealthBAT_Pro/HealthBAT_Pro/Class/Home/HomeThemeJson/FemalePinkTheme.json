@@ -1,0 +1,46 @@
+{
+    "color": {
+        "RoundGuide_icon_TextColor"                   : "#fa7071"
+    },
+    
+    "image": {
+        "RoundGuide_icon_buy"                         : "icon_buy_p",
+        "RoundGuide_icon_buy_press"                   : "icon_buy_press_p",
+        "RoundGuide_icon_sq"                          : "icon_sq_p",
+        "RoundGuide_icon_sq_press"                    : "icon_sq_press_p",
+        "RoundGuide_icon_zx"                          : "icon_zx_p",
+        "RoundGuide_icon_zx_press"                    : "icon_zx_press_p",
+        "RoundGuide_icon_medical"                     : "icon_medical_p",
+        "RoundGuide_icon_medical_press"               : "icon_medical_press_p",
+        "RoundGuide_icon_video"                       : "icon_video_p",
+        "RoundGuide_icon_video_press"                 : "icon_video_press_p",
+        "RoundGuide_icon_doctor"                      : "icon_doctor_p",
+        "RoundGuide_icon_doctor_press"                : "icon_doctor_press_p",
+        "RoundGuide_icon_ys"                          : "icon_ys_p",
+        "RoundGuide_icon_ys_press"                    : "icon_ys_press_p",
+        "RoundGuide_icon_age"                         : "icon_age_p",
+        "RoundGuide_icon_age_press"                   : "icon_age_press_p",
+        "RoundGuide_icon_gyg"                         : "icon_gyg_p",
+        "RoundGuide_icon_gyg_press"                   : "icon_gyg_press_p",
+        
+        "RoundGuide_bg_upper"                         : "bg_upper_p",
+        "RoundGuide_bg_upper_x"                       : "bg_upper_x_p",
+        "RoundGuide_bottom"                           : "bottom_p",
+        "RoundGuide_bottom_x"                         : "bottom_x_p",
+        "RoundGuide_bat_jkda"                         : "but_jkda_p",
+        "RoundGuide_bat_Slide"                        : "Slide_p",
+        "RoundGuide_icon_logo"                        : "icon_logo_p",
+        "RoundGuide_icon_searchBG"                    : "icon_ssk_p",
+        "RoundGuide_icon_jrsy"                        : "icon_jrsy_p",
+        "RoundGuide_icon_pb"                          : "icon_pb_p",
+        "RoundGuide_icon_jkpg"                        : "icon_jkpg_p",
+        "RoundGuide_icon_ty"                          : "icon_ty_p",
+        "RoundGuide_icon_swrl"                        : "icon_swrl_p",
+        "RoundGuide_wz_n_ydys"                        : "wz_n_ydys_p"
+    },
+    
+    "other": {
+        
+    }
+}
+

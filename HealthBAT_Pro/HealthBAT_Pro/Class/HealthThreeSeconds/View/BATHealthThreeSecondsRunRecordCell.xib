@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BATHealthThreeSecondsRunRecordCell" rowHeight="66" id="KGk-i7-Jjw" customClass="BATHealthThreeSecondsRunRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR7-88-wHc" userLabel="stepCountLabel">
+                        <rect key="frame" x="30" y="22" width="47" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2h-HB-zdu" userLabel="calorieLabel">
+                        <rect key="frame" x="259" y="26" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8K-bZ-R1T" userLabel="步">
+                        <rect key="frame" x="82" y="22" width="12.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O8K-bZ-R1T" firstAttribute="top" secondItem="tR7-88-wHc" secondAttribute="top" id="EMf-un-s9W"/>
+                    <constraint firstItem="tR7-88-wHc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="FIM-cE-V89"/>
+                    <constraint firstItem="v2h-HB-zdu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KKM-YI-4a9"/>
+                    <constraint firstAttribute="trailing" secondItem="v2h-HB-zdu" secondAttribute="trailing" constant="30" id="Mfq-D3-XoF"/>
+                    <constraint firstItem="tR7-88-wHc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QVN-YD-ViK"/>
+                    <constraint firstItem="O8K-bZ-R1T" firstAttribute="leading" secondItem="tR7-88-wHc" secondAttribute="trailing" constant="5" id="dvU-ae-DMD"/>
+                    <constraint firstItem="O8K-bZ-R1T" firstAttribute="bottom" secondItem="tR7-88-wHc" secondAttribute="bottom" id="tQy-4i-zJT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="calorieLabel" destination="v2h-HB-zdu" id="ys4-1X-SuJ"/>
+                <outlet property="stepCountLabel" destination="tR7-88-wHc" id="U4j-ib-3Ee"/>
+                <outlet property="titleLabel" destination="O8K-bZ-R1T" id="eTQ-AJ-caw"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="-7"/>
+        </tableViewCell>
+    </objects>
+</document>

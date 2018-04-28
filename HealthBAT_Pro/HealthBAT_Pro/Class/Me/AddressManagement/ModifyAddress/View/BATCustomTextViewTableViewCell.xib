@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BATCustomTextViewTableViewCell" id="KGk-i7-Jjw" customClass="BATCustomTextViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CiA-Us-8wf">
+                        <rect key="frame" x="10" y="10" width="300" height="95.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="请填写详细地址 不少于5个字"/>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CiA-Us-8wf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4iq-zm-li4"/>
+                    <constraint firstItem="CiA-Us-8wf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dEv-pl-ZBa"/>
+                    <constraint firstAttribute="trailing" secondItem="CiA-Us-8wf" secondAttribute="trailing" constant="10" id="hAS-9U-BzF"/>
+                    <constraint firstAttribute="bottom" secondItem="CiA-Us-8wf" secondAttribute="bottom" constant="10" id="o7J-lz-yhq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="CiA-Us-8wf" id="tkn-P2-BEv"/>
+            </connections>
+            <point key="canvasLocation" x="-146" y="40"/>
+        </tableViewCell>
+    </objects>
+</document>

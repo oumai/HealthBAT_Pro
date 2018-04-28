@@ -1,0 +1,6 @@
+framework module Pods_HealthBAT_Pro {
+  umbrella header "Pods-HealthBAT_Pro-umbrella.h"
+
+  export *
+  module * { export * }
+}

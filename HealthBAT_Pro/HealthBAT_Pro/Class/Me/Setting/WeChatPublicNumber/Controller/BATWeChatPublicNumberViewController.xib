@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BATWeChatPublicNumberViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg_QRC" translatesAutoresizingMaskIntoConstraints="NO" id="odD-pJ-aA3">
+                    <rect key="frame" x="26.5" y="57" width="355" height="434"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixin_QRC" translatesAutoresizingMaskIntoConstraints="NO" id="OFk-EH-Gal">
+                    <rect key="frame" x="59" y="75" width="291" height="291"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-PW-mN0" userLabel="底部View">
+                    <rect key="frame" x="0.0" y="617" width="409" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-1l-hu9" userLabel="保存按钮">
+                            <rect key="frame" x="0.0" y="0.5" width="204.5" height="49.5"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="saveQRCodeImage:" destination="-1" eventType="touchUpInside" id="VHF-FH-MJh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hL-2S-ZCO" userLabel="分享按钮">
+                            <rect key="frame" x="204.5" y="0.5" width="204.5" height="49.5"/>
+                            <state key="normal" title="分享给微信好友" backgroundImage="QRC_Save_button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareQRCodeImage:" destination="-1" eventType="touchUpInside" id="IX5-FM-JF8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-tH-Gja" userLabel="顶部分割线">
+                            <rect key="frame" x="0.0" y="0.0" width="409" height="0.5"/>
+                            <color key="backgroundColor" red="0.81781032394031583" green="0.81781032394031583" blue="0.81781032394031583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Pa3-vs-5au"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0hL-2S-ZCO" firstAttribute="bottom" secondItem="Y7I-1l-hu9" secondAttribute="bottom" id="1qA-zw-3Bd"/>
+                        <constraint firstItem="0hL-2S-ZCO" firstAttribute="leading" secondItem="Y7I-1l-hu9" secondAttribute="trailing" id="4T6-mt-dPv"/>
+                        <constraint firstItem="Mpn-tH-Gja" firstAttribute="leading" secondItem="hw6-PW-mN0" secondAttribute="leading" id="GW2-fi-8EB"/>
+                        <constraint firstItem="Y7I-1l-hu9" firstAttribute="top" secondItem="Mpn-tH-Gja" secondAttribute="bottom" id="LM7-6b-EAU"/>
+                        <constraint firstAttribute="bottom" secondItem="Y7I-1l-hu9" secondAttribute="bottom" id="MtN-Ly-1Qr"/>
+                        <constraint firstAttribute="height" constant="50" id="ST9-iv-GUs"/>
+                        <constraint firstAttribute="trailing" secondItem="Mpn-tH-Gja" secondAttribute="trailing" id="mDJ-V0-fsg"/>
+                        <constraint firstItem="0hL-2S-ZCO" firstAttribute="width" secondItem="Y7I-1l-hu9" secondAttribute="width" id="oj1-7z-QZq"/>
+                        <constraint firstItem="Y7I-1l-hu9" firstAttribute="leading" secondItem="hw6-PW-mN0" secondAttribute="leading" id="pHX-bl-nwk"/>
+                        <constraint firstItem="0hL-2S-ZCO" firstAttribute="top" secondItem="Y7I-1l-hu9" secondAttribute="top" id="qgO-nX-lvq"/>
+                        <constraint firstAttribute="trailing" secondItem="0hL-2S-ZCO" secondAttribute="trailing" id="wGv-9g-5IG"/>
+                        <constraint firstItem="Mpn-tH-Gja" firstAttribute="top" secondItem="hw6-PW-mN0" secondAttribute="top" id="ziA-AL-Ub4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bz-k5-HOt">
+                    <rect key="frame" x="108.5" y="392" width="191" height="34"/>
+                    <string key="text">微信扫一扫二维码图案
+关注健康 BAT 官方微信服务号</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hw6-PW-mN0" secondAttribute="trailing" id="4Co-6O-3C0"/>
+                <constraint firstItem="6Bz-k5-HOt" firstAttribute="top" secondItem="odD-pJ-aA3" secondAttribute="top" constant="335" id="5RD-20-DFD"/>
+                <constraint firstItem="odD-pJ-aA3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26.5" id="6KS-0i-yvJ"/>
+                <constraint firstItem="OFk-EH-Gal" firstAttribute="top" secondItem="odD-pJ-aA3" secondAttribute="top" constant="18" id="6h2-9C-vrC"/>
+                <constraint firstAttribute="bottom" secondItem="hw6-PW-mN0" secondAttribute="bottom" id="7ee-dJ-jRY"/>
+                <constraint firstItem="6Bz-k5-HOt" firstAttribute="centerX" secondItem="odD-pJ-aA3" secondAttribute="centerX" id="ICF-ha-Ys1"/>
+                <constraint firstItem="hw6-PW-mN0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RIK-pH-pIV"/>
+                <constraint firstItem="odD-pJ-aA3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="a3g-8J-H79"/>
+                <constraint firstAttribute="trailing" secondItem="odD-pJ-aA3" secondAttribute="trailing" constant="27.5" id="bLO-5y-Yfr"/>
+                <constraint firstItem="OFk-EH-Gal" firstAttribute="centerX" secondItem="odD-pJ-aA3" secondAttribute="centerX" id="e0W-nJ-Wat"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="86.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="QRC_Save_button" width="187" height="50"/>
+        <image name="bg_QRC" width="355" height="434"/>
+        <image name="weixin_QRC" width="291" height="291"/>
+    </resources>
+</document>

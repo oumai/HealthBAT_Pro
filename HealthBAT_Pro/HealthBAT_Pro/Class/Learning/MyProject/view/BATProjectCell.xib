@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="BATProjectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-ln" translatesAutoresizingMaskIntoConstraints="NO" id="ARh-P1-HPc">
+                        <rect key="frame" x="16" y="15" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="Ry9-vr-pgB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-bo-FON">
+                        <rect key="frame" x="85" y="34" width="177" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-ek-adp">
+                        <rect key="frame" x="272" y="19" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="E4i-c5-g5V"/>
+                            <constraint firstAttribute="height" constant="28" id="z7h-uT-mWZ"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="ic-scya"/>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CLp-kk-5vw"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAx-XO-5xZ">
+                        <rect key="frame" x="0.0" y="84" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Uuc-9R-k9h"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY1-I6-2iY">
+                        <rect key="frame" x="265" y="34" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV8-je-3X9" customClass="BATGraditorButton">
+                        <rect key="frame" x="271.5" y="57" width="29" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="2x0-uL-o91"/>
+                            <constraint firstAttribute="width" constant="29" id="hM9-X7-Z6A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="删除"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TY1-I6-2iY" firstAttribute="centerY" secondItem="aqi-bo-FON" secondAttribute="centerY" id="7xk-AD-X37"/>
+                    <constraint firstAttribute="bottom" secondItem="WAx-XO-5xZ" secondAttribute="bottom" id="A9U-lB-UbS"/>
+                    <constraint firstItem="WAx-XO-5xZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CTJ-GH-mzU"/>
+                    <constraint firstItem="ARh-P1-HPc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LI6-oe-Tbb"/>
+                    <constraint firstItem="TY1-I6-2iY" firstAttribute="centerX" secondItem="FsM-ek-adp" secondAttribute="centerX" id="LgD-FZ-apV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TY1-I6-2iY" secondAttribute="trailing" constant="5" id="N4W-JI-3hH"/>
+                    <constraint firstItem="ARh-P1-HPc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ozz-Bc-UwL"/>
+                    <constraint firstItem="FsM-ek-adp" firstAttribute="leading" secondItem="aqi-bo-FON" secondAttribute="trailing" constant="10" id="Xa5-OK-vEm"/>
+                    <constraint firstItem="FsM-ek-adp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="Xra-70-CXx"/>
+                    <constraint firstAttribute="trailing" secondItem="FsM-ek-adp" secondAttribute="trailing" constant="20" id="Yw7-82-59I"/>
+                    <constraint firstItem="TY1-I6-2iY" firstAttribute="baseline" secondItem="aqi-bo-FON" secondAttribute="baseline" id="aF2-ax-gKC"/>
+                    <constraint firstAttribute="trailing" secondItem="WAx-XO-5xZ" secondAttribute="trailing" id="dbj-fu-79i"/>
+                    <constraint firstItem="aqi-bo-FON" firstAttribute="leading" secondItem="ARh-P1-HPc" secondAttribute="trailing" constant="14" id="iUs-jC-YGu"/>
+                    <constraint firstItem="aqi-bo-FON" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jbJ-p9-6eV"/>
+                    <constraint firstItem="ARh-P1-HPc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nzS-ov-MqY"/>
+                    <constraint firstItem="TY1-I6-2iY" firstAttribute="leading" secondItem="aqi-bo-FON" secondAttribute="trailing" constant="3" id="oOO-rq-2hh"/>
+                    <constraint firstItem="VV8-je-3X9" firstAttribute="centerX" secondItem="TY1-I6-2iY" secondAttribute="centerX" id="qpN-xs-6wQ"/>
+                    <constraint firstItem="VV8-je-3X9" firstAttribute="top" secondItem="TY1-I6-2iY" secondAttribute="bottom" constant="5" id="u5n-eQ-04j"/>
+                    <constraint firstAttribute="bottom" secondItem="ARh-P1-HPc" secondAttribute="bottom" constant="15" id="vht-XQ-fEh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clickBtn" destination="FsM-ek-adp" id="mIU-lM-9KA"/>
+                <outlet property="iconImg" destination="ARh-P1-HPc" id="eb5-eI-IlL"/>
+                <outlet property="lineView" destination="WAx-XO-5xZ" id="Tiv-6d-pkg"/>
+                <outlet property="stateLabel" destination="TY1-I6-2iY" id="Ats-GV-YGd"/>
+                <outlet property="subTitle" destination="VV8-je-3X9" id="YGN-Sf-sVE"/>
+                <outlet property="titleLb" destination="aqi-bo-FON" id="YqA-ln-Wve"/>
+            </connections>
+            <point key="canvasLocation" x="-159" y="-70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-scya" width="28" height="28"/>
+        <image name="img-ln" width="168" height="89"/>
+    </resources>
+</document>

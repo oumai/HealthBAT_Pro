@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BATHealthThreeSecondsFoodEnterTopInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Scd-2K-pyO">
+                    <rect key="frame" x="15" y="0.0" width="345" height="181"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-LC-kNg" userLabel="遮盖View">
+                    <rect key="frame" x="15" y="141" width="345" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="炒蒜薹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOi-Hc-R8g">
+                            <rect key="frame" x="17.5" y="11.5" width="43" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123卡路里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTp-0u-mpw">
+                            <rect key="frame" x="261" y="11.5" width="66.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-Fq-h7D">
+                            <rect key="frame" x="162" y="12" width="21" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sSh-Fq-h7D" firstAttribute="centerX" secondItem="Rfl-LC-kNg" secondAttribute="centerX" id="3G1-dO-Tsk"/>
+                        <constraint firstItem="sSh-Fq-h7D" firstAttribute="centerY" secondItem="Rfl-LC-kNg" secondAttribute="centerY" id="9oZ-HI-HXw"/>
+                        <constraint firstItem="OTp-0u-mpw" firstAttribute="centerY" secondItem="Rfl-LC-kNg" secondAttribute="centerY" id="OmG-i9-ioM"/>
+                        <constraint firstItem="sSh-Fq-h7D" firstAttribute="centerY" secondItem="Rfl-LC-kNg" secondAttribute="centerY" id="T23-mE-FuO"/>
+                        <constraint firstAttribute="trailing" secondItem="OTp-0u-mpw" secondAttribute="trailing" constant="17.5" id="XR6-ha-bNZ"/>
+                        <constraint firstItem="EOi-Hc-R8g" firstAttribute="centerY" secondItem="Rfl-LC-kNg" secondAttribute="centerY" id="k0S-vj-ziX"/>
+                        <constraint firstAttribute="height" constant="40" id="nMV-c0-tcK"/>
+                        <constraint firstItem="EOi-Hc-R8g" firstAttribute="leading" secondItem="Rfl-LC-kNg" secondAttribute="leading" constant="17.5" id="uds-XV-FC6"/>
+                        <constraint firstItem="sSh-Fq-h7D" firstAttribute="centerX" secondItem="Rfl-LC-kNg" secondAttribute="centerX" id="wZf-Mz-x58"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz8-tN-F3E">
+                    <rect key="frame" x="15" y="201" width="345" height="15"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="jFD-Zd-DoT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="抱歉，找不到匹配的食物" image="Prompt">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qz8-tN-F3E" firstAttribute="top" secondItem="Scd-2K-pyO" secondAttribute="bottom" constant="20" id="0Ef-kv-F6Q"/>
+                <constraint firstItem="Rfl-LC-kNg" firstAttribute="bottom" secondItem="Scd-2K-pyO" secondAttribute="bottom" id="EqT-fj-s4X"/>
+                <constraint firstItem="Rfl-LC-kNg" firstAttribute="trailing" secondItem="Scd-2K-pyO" secondAttribute="trailing" id="P9z-4h-3xX"/>
+                <constraint firstItem="Rfl-LC-kNg" firstAttribute="leading" secondItem="Scd-2K-pyO" secondAttribute="leading" id="VLS-r8-RDS"/>
+                <constraint firstAttribute="trailing" secondItem="Scd-2K-pyO" secondAttribute="trailing" constant="15" id="g0Z-RG-ORJ"/>
+                <constraint firstItem="Scd-2K-pyO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="hMU-8r-3Sf"/>
+                <constraint firstItem="qz8-tN-F3E" firstAttribute="leading" secondItem="Scd-2K-pyO" secondAttribute="leading" id="iWQ-j8-Gdk"/>
+                <constraint firstItem="Scd-2K-pyO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n4d-fz-EZt"/>
+                <constraint firstItem="qz8-tN-F3E" firstAttribute="trailing" secondItem="Scd-2K-pyO" secondAttribute="trailing" id="yMa-FD-RNB"/>
+                <constraint firstAttribute="bottom" secondItem="qz8-tN-F3E" secondAttribute="bottom" constant="20" id="zPy-5W-Idr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calorieLabel" destination="OTp-0u-mpw" id="i73-5E-YS9"/>
+                <outlet property="coverView" destination="Rfl-LC-kNg" id="jTW-Fa-TJp"/>
+                <outlet property="foodCountLabel" destination="sSh-Fq-h7D" id="tSU-cD-Raz"/>
+                <outlet property="iconImageView" destination="Scd-2K-pyO" id="itE-ex-Vii"/>
+                <outlet property="messageButton" destination="qz8-tN-F3E" id="pcg-yW-HWL"/>
+                <outlet property="messageButtonBottomConstraint" destination="zPy-5W-Idr" id="xLz-P3-9am"/>
+                <outlet property="messageButtonHeightCons" destination="jFD-Zd-DoT" id="ida-59-ch1"/>
+                <outlet property="nameLabel" destination="EOi-Hc-R8g" id="Sga-Kk-8tO"/>
+            </connections>
+            <point key="canvasLocation" x="-34.5" y="-185.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Prompt" width="13" height="13"/>
+    </resources>
+</document>

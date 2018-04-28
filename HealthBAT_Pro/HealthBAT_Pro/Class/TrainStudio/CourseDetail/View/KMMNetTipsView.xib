@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vcl-cw-dEF" customClass="KMMNetTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在使用非WiFi网络，播放将产生流量费用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-Vn-BOt">
+                    <rect key="frame" x="0.0" y="58" width="375" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频时长 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXX-5m-ah6">
+                    <rect key="frame" x="0.0" y="79" width="167" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="流量 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0B-ek-YQz">
+                    <rect key="frame" x="208" y="79" width="167" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9l-s0-I2k">
+                    <rect key="frame" x="137.5" y="100" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gJ5-bH-Tuf"/>
+                        <constraint firstAttribute="width" constant="100" id="nmY-Zz-9HG"/>
+                    </constraints>
+                    <state key="normal" title="继续播放"/>
+                    <connections>
+                        <action selector="playAction:" destination="vcl-cw-dEF" eventType="touchUpInside" id="IG9-GP-36v"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnX-fY-ULf">
+                    <rect key="frame" x="187" y="76.5" width="1" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="1QB-ZR-s3x"/>
+                        <constraint firstAttribute="height" constant="20" id="Hv2-Rk-S9J"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONL-NZ-LGN">
+                    <rect key="frame" x="10" y="32" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4Tq-yv-kOw"/>
+                        <constraint firstAttribute="width" constant="20" id="7g3-jz-Axb"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="back-icon-w"/>
+                    <connections>
+                        <action selector="backAction:" destination="vcl-cw-dEF" eventType="touchUpInside" id="OHZ-yr-GRh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YXX-5m-ah6" firstAttribute="top" secondItem="g9W-Vn-BOt" secondAttribute="bottom" constant="5" id="3Cm-Fl-rbR"/>
+                <constraint firstItem="Z9l-s0-I2k" firstAttribute="top" secondItem="YXX-5m-ah6" secondAttribute="bottom" constant="5" id="48n-JU-PvB"/>
+                <constraint firstItem="ONL-NZ-LGN" firstAttribute="leading" secondItem="vcl-cw-dEF" secondAttribute="leading" constant="10" id="4wu-Xp-tyL"/>
+                <constraint firstAttribute="trailing" secondItem="g9W-Vn-BOt" secondAttribute="trailing" id="65h-4o-ZFh"/>
+                <constraint firstItem="X0B-ek-YQz" firstAttribute="leading" secondItem="AnX-fY-ULf" secondAttribute="trailing" constant="20" id="CKb-KW-Rgy"/>
+                <constraint firstItem="YXX-5m-ah6" firstAttribute="leading" secondItem="vcl-cw-dEF" secondAttribute="leading" id="MXh-8w-t7R"/>
+                <constraint firstItem="AnX-fY-ULf" firstAttribute="leading" secondItem="YXX-5m-ah6" secondAttribute="trailing" constant="20" id="NIh-Pp-zUO"/>
+                <constraint firstItem="AnX-fY-ULf" firstAttribute="centerX" secondItem="vcl-cw-dEF" secondAttribute="centerX" id="Twh-OR-GT3"/>
+                <constraint firstItem="X0B-ek-YQz" firstAttribute="centerY" secondItem="AnX-fY-ULf" secondAttribute="centerY" id="dpD-Cp-cHP"/>
+                <constraint firstItem="ONL-NZ-LGN" firstAttribute="top" secondItem="vcl-cw-dEF" secondAttribute="top" constant="32" id="lx7-Ge-s4O"/>
+                <constraint firstItem="g9W-Vn-BOt" firstAttribute="leading" secondItem="vcl-cw-dEF" secondAttribute="leading" id="nVb-cF-7tE"/>
+                <constraint firstAttribute="trailing" secondItem="X0B-ek-YQz" secondAttribute="trailing" id="pDk-bl-ypN"/>
+                <constraint firstItem="YXX-5m-ah6" firstAttribute="centerY" secondItem="AnX-fY-ULf" secondAttribute="centerY" id="r1f-G7-eZR"/>
+                <constraint firstItem="AnX-fY-ULf" firstAttribute="centerY" secondItem="vcl-cw-dEF" secondAttribute="centerY" id="vTF-Dl-M7W"/>
+                <constraint firstItem="Z9l-s0-I2k" firstAttribute="centerX" secondItem="vcl-cw-dEF" secondAttribute="centerX" id="zzc-l0-aCK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="ONL-NZ-LGN" id="ecq-7N-etD"/>
+                <outlet property="clickBtn" destination="Z9l-s0-I2k" id="Dmi-L8-dTh"/>
+                <outlet property="messageLb" destination="g9W-Vn-BOt" id="cJ4-IA-3VK"/>
+                <outlet property="sizeLb" destination="X0B-ek-YQz" id="aDO-d0-ihD"/>
+                <outlet property="timeLb" destination="YXX-5m-ah6" id="kZg-oE-sMz"/>
+            </connections>
+            <point key="canvasLocation" x="-155.5" y="-20.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-icon-w" width="20" height="20"/>
+    </resources>
+</document>
